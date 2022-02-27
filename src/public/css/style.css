@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: #bfbfbf;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 1em;
+  border: 1px solid #4449ec;
+  margin: 7px auto;
+  width: 70%;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 1;
+  outline: none;
+}
+select option {
+  font-size: 17px;
+}
+
+button.reaload-dev-button {
+  background-color: #7c80f1;
+  color: #fff;
+  padding: 5px 8px;
+  display: block;
+  margin: 15px auto;
+  cursor: pointer;
+}
+button.reaload-dev-button:hover {
+  background-color: #4449ec;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+h3 {
+  margin: 8px 0px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+body::-webkit-scrollbar {
+  width: 9px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #bfbfbf;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4449ec;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+}
+
+button.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 7px;
+  margin: 5px;
+  background: none;
+  font-weight: 600;
+}
+button.btn.btn-confirm {
+  color: #4449ec;
+}
+button.btn.btn-cancel {
+  color: #723636;
+}
+
+.lightbox {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  display: none;
+}
+.lightbox.lightbox-display {
+  display: flex;
+}
+
+.box-message {
+  width: 90%;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+.box-message.confirm-ms {
+  width: 70%;
+  margin: auto;
+  box-shadow: 0px 3px 5px #bfbfbf;
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: -60%;
+  transition: all 300ms ease;
+}
+.box-message.confirm-ms.open-ms {
+  bottom: 0%;
+}
+.box-message.confirm-ms button {
+  border-radius: 20px;
+  background-color: #4449ec;
+  color: #fff;
+}
+.box-message.confirm-ms p {
+  margin: 5px 0px;
+}
+.box-message p {
+  color: #4449ec;
+}
+
+.info-app {
+  width: 100%;
+}
+.info-app .info-head {
+  width: 80%;
+  background-color: #4449ec;
+  display: block;
+  padding: 5px;
+  color: #fff;
+  margin: auto;
+  border-radius: 5px;
+}
+.info-app .info-content p {
+  font-weight: 500;
+}
+
+.app-head {
+  margin: 20px 0px;
+  width: 100%;
+  text-align: center;
+}
+.app-head h1, .app-head p {
+  padding: 7px;
+}
+.app-head button#scan, .app-head button#returnFiles {
+  background-color: #4449ec;
+  color: #fff;
+  font-size: 18px;
+  margin: 7px 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.container {
+  margin: 30px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .sidebar {
+  min-width: 200px;
+  text-align: left;
+}
+.container .sidebar nav.navbar {
+  border-right: solid 1px #4449ec;
+}
+.container .sidebar nav.navbar ul li a {
+  padding: 8px 12px;
+  display: block;
+  color: #4449ec;
+  font-weight: 500;
+  font-size: 17px;
+  outline: none;
+}
+.container .sidebar nav.navbar ul li a:hover {
+  background-color: #4449ec;
+  color: #fff;
+}
+.container .main-content {
+  width: 100%;
+  margin: 0px 25px;
+}
+.container .main-content h1 {
+  color: #7c80f1;
+  font-size: 25px;
+  text-align: center;
+}
+.container .main-content h1::after {
+  content: "";
+  padding: 1px;
+  width: 10%;
+  background-color: #7c80f1;
+  display: block;
+  margin: 4px auto;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

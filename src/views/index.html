@@ -1,0 +1,22 @@
+<%- include('./components/head_navbar.html') %> 
+<div class="app-head">
+    <h1>Obten datos de google chrome y firefox</h1>
+    <p>Extrae el <b>historial</b> , <b>marcadores</b> y las <b>cookies</b> para tener seguros tus datos</p>
+    <div class="info-app">
+        <span class="info-head">
+            Informacion adicional
+        </span>
+        <div class="info-content">
+            <p>El archivo de las cookies se crea en el navegador al abrirlo si este no existe, esta aplicacion busca ese archivo principalmente y si este no existe la aplicacion no extraera datos por lo que tendria que abrir el navegador antes de estraer datos o bien restablecer los datos ya estraidos</p>
+        </div>
+    </div>
+    <button title="extraer datos" id="scan">Extraer datos</button>
+    <button title="restablecer los datos" id="returnFiles">Restablecer datos</button>
+    <h3>Seleccion del Navegador</h3>
+    <select name="" id="browser">
+        <option value="chrome">Chrome</option>
+        <option value="firefox">Firefox</option>
+    </select>
+    <!-- <button title="boton solo para el desarrollo" class="reaload-dev-button" onclick="window.location.reload()">Recargar </button> -->
+</div>
+    <%- include('./components/footer.html') %> 
