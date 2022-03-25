@@ -17,18 +17,19 @@ let files_chrome = [
     'Cookies', // Todas las cookies
     'History', // Todo el historial
     'Bookmarks', // Todos los marcadores
-    'Login Data' // Todas las contraseñas guardadas de los sitios web
+    'Login Data', // Todas las contraseñas guardadas de los sitios web
+    'Favicons'
 ]
 let files_firefox = [
     'cookies.sqlite', // Todas las cookies
     'places.sqlite', // Marcadores, descargas e historial de navegación
-    'formhistory.sqlite' // Historial de autocompletado
 ]
 let browserOption = document.getElementById('browser')
 let webBrowser = 'chrome'
 let filesPath = ''
 let currentFiles = []
 const acceptMS = (index)=>{
+    // FIXME: PROBLEMA EN LA LONGITUD ( no siempre obteb )
     if(index == currentFiles.length-1){
         if(confirmMs.classList.contains('open-ms')){
             confirmMs.classList.remove('open-ms')

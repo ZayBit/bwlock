@@ -3,11 +3,17 @@ const { app, BrowserWindow, MenuItem, Menu } = electron
 // express index.js
 require('./index')
 let win;
+const url = require('url')
+const path = require('path')
 const createWindow = (w, h) => {
   // Crea la ventana del navegador.
   win = new BrowserWindow({ width: w, height: h, resizable:false , icon: __dirname + '/icon.png' })
-  win.se
-  win.loadURL('http://localhost:4040')
+
+  win.loadURL(url.format({
+    pathname: path.join(__dirname, '/views/index.html'),
+    protocol: 'file',
+    slashes: true
+  }))
   // Emitido cuando la ventana está cerrada.
   win.on('closed', () => {
     win = null
